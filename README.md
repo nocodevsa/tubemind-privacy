@@ -1,92 +1,123 @@
 # TubeMind – Privacy Policy
 
-*Last updated: March 2024*
-
-## Overview
-TubeMind is a Chrome extension that helps you organize YouTube videos. 
-We are committed to protecting your privacy.
+*Last updated: March 2026*
 
 ## Data Storage
-All your data (saved videos, categories, notes, settings) is stored 
-**locally in your browser** using Chrome's built-in storage API. 
-We do not have access to this data. It never leaves your device.
+All your saved videos, categories, notes and settings are stored **locally in your browser** using Chrome's storage API. This data never leaves your device and we cannot access it.
 
 ## Premium License
-If you purchase TubeMind Premium, we collect only:
-- Your email address (to deliver your license key)
-- Your name (from payment processor)
-- Country (from payment processor)
+If you purchase TubeMind Premium, we collect only your email address and name to deliver your license key. This data is never sold or shared.
 
-This data is stored securely and never sold or shared with third parties.
-It is used solely to deliver and support your license.
+## Permissions
+- **storage** – Save your video library locally
+- **activeTab** – Detect YouTube pages
+- **scripting** – Add Save buttons to YouTube thumbnails
+- **alarms** – Schedule daily reminders
+- **notifications** – Show Watch Today reminders
 
-## Permissions We Use
-- **storage** – Save your video library locally in Chrome
-- **activeTab** – Detect YouTube pages to show Save buttons
-- **scripting** – Inject Save buttons onto YouTube thumbnails  
-- **alarms** – Schedule your daily Watch Today reminders
-- **notifications** – Show reminder notifications
-- **host_permissions (youtube.com)** – Required to interact with YouTube pages
-
-## Third Parties
-TubeMind does not use any analytics, advertising, or tracking services.
-
-## Children's Privacy
-TubeMind is not directed at children under 13.
-
-## Changes
-We may update this policy. Continued use after changes means acceptance.
+## No Tracking
+TubeMind uses no analytics, advertising or tracking of any kind.
 
 ## Contact
-Questions? Email: **anmolmishra51032@gmail.com**
+anmolmishra51032@gmail.com
 ```
 
-**Step 4** — Commit the changes (click "Commit changes" green button)
-
-**Step 5** — Go to repository **Settings** → scroll to **"Pages"** section → under Source select **"Deploy from branch"** → Branch: `main` → Click **Save**
-
-**Step 6** — Wait 2 minutes → your privacy policy is live at:
-```
-https://yourusername.github.io/tubemind-privacy
-```
-
-That's your privacy policy URL. Done.
+4. Click **"Commit changes"**
+5. Go to repo **Settings** → **Pages** → Source: `main` branch → **Save**
+6. Wait 2 minutes → your URL is: `https://YOURUSERNAME.github.io/tubemind-privacy`
+7. Test it opens in browser before moving on
 
 ---
 
-## Your Folder Structure — One Problem
+### Step 2 — Make Screenshots (takes 15 min)
 
-Looking at your screenshot, your structure is:
+You need **at least 1 screenshot** at exactly **1280×800px**
+
+1. Load the extension locally in Chrome:
+   - Go to `chrome://extensions`
+   - Turn on **Developer mode** (top right toggle)
+   - Click **"Load unpacked"** → select your `TubeMind – YouTube Video Organizer` folder
+2. Open YouTube, save a few videos manually so the popup looks full
+3. Click the TubeMind icon → take a screenshot with **Windows + Shift + S**
+4. Go to **[screely.com](https://screely.com)** → upload screenshot → download (adds a nice browser frame)
+5. Repeat for the Stats view and Mood view
+
+Make 3 screenshots:
+- Library with saved videos
+- Stats/Insights view
+- Mood picker view
+
+---
+
+### Step 3 — Make Promo Tile (takes 10 min)
+
+1. Go to **[canva.com](https://canva.com)** → Login → **"Create design"** → Custom size
+2. Set **440 × 280 px** → Create
+3. Design it simply:
+   - Background color: `#080b14` (dark)
+   - Add text: **🧠 TubeMind** (large, white)
+   - Subtitle: **"Smart YouTube Organizer"** (smaller, purple `#a78bfa`)
+   - Bottom: **"Never lose a great video again"** (small, gray)
+4. **Download as PNG**
+
+---
+
+### Step 4 — Submit to Chrome Web Store
+
+1. Go to **[chrome.google.com/webstore/devconsole](https://chrome.google.com/webstore/devconsole)**
+2. Sign in → pay **$5 one-time fee** → Accept terms
+3. Click **"New Item"**
+4. Upload **`TubeMind-store-ready.zip`** (the file I just gave you above ↑)
+5. Fill in the listing:
+
+**Store listing tab:**
+| Field | What to enter |
+|-------|--------------|
+| Name | `TubeMind – YouTube Video Organizer` |
+| Summary | `Save YouTube videos with intent. Organize by category, mood & priority. Never lose a great video again.` |
+| Category | `Productivity` |
+| Language | `English` |
+
+**Description** (copy this exactly):
 ```
-TubeMind – YouTube Video Organizer/
-├── icons/
-├── popup/
-├── background.js
-├── content.css
-├── content.js
-└── manifest.json        ✅ correct
+🧠 TubeMind turns your YouTube chaos into a smart personal library.
+
+Instead of a generic Watch Later list you never open, save videos with purpose — by category, priority, and mood.
+
+FEATURES:
+- Save to custom categories (Learning, Inspiration, Business...)
+- Set priorities — ⭐ Watch Today, 📌 This Week, 🕒 Later
+- 🎯 Mood-based watching — match videos to how you feel
+- 🔍 Search your entire vault instantly
+- 📝 Add private notes to any video
+- 🏷️ Tag videos for cross-category filtering
+- 📌 Pin important videos to the top
+- 📦 Archive watched videos
+- ☑️ Bulk move, reprioritize or delete
+- 🔥 Watch streak tracking
+- 📊 Stats — channel insights, weekly digest
+- 🔔 Daily reminder notifications
+- 🔄 Sync across devices
+
+TUBEMIND PREMIUM ($1 lifetime):
+- 🌈 4 themes — Midnight, Forest, Ocean, Light
+- 🎨 Custom category colors & icons
+- 🔍 Duplicate video detection
+- 🏥 Category health warnings
+- ⏱ Watch time estimator
+- 📋 Export notes as Markdown
+
+HOW IT WORKS:
+1. Install TubeMind
+2. Browse YouTube — hover any video thumbnail
+3. Click Save → pick your category
+4. Open TubeMind popup to manage your library
+
+✅ Your data stays 100% local in your browser. We never see your videos.
 ```
 
-This is correct **BUT** your folder name has a problem:
+6. **Upload your screenshots** and **440×280 promo tile**
 
-> ❌ `TubeMind – YouTube Video Organizer` — the **em dash (–) and spaces** in the folder name can cause issues when zipping on Windows.
-
-**Fix it** — rename the folder to simply:
+7. **Privacy tab** → paste your GitHub Pages URL:
 ```
-tubemind
-```
-
-Then zip it correctly on Windows:
-- Open the `tubemind` folder
-- Select **all files inside** (Ctrl+A)
-- Right click → **"Compress to ZIP file"** (Windows 11) or **Send to → Compressed folder**
-- Do NOT zip the folder itself — zip the **contents**
-
-The zip should extract directly to these files, not to a subfolder:
-```
-icons/
-popup/
-background.js
-content.css
-content.js
-manifest.json
+https://YOURUSERNAME.github.io/tubemind-privacy
